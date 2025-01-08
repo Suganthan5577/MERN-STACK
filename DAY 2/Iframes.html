@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>Developing IFrame Port</title>
+        <style>
+            @media (max-width: 760px) {
+                .gal-container {
+                    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                }
+            }
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+                background-color: #1b262c;
+                color: #bbe1fa;
+                padding: 18px;
+            }
+            h1 {
+                font-size: 2.5rem;
+                margin-bottom: 20px;
+                color: #3282b8;
+            }
+            h2 {
+                color: #0f4c75;
+            }
+            .gal-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 15px;
+                padding: 20px;
+                max-width: 1200px;
+                margin: auto;
+            }
+            .iframe-container {
+                width: 100%;
+                height: 250px;
+                border: 3px solid #bbe1fa;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            }
+            .iframe {
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Interactive IFrame Page</h1>
+        <div class="container">
+            <div class="iframe-container">
+                <iframe src="1.jpeg" title="Image"></iframe>
+            </div>
+
+            <div class="iframe-container">
+                <iframe src="2.jpeg" title="Flag"></iframe>
+            </div>
+
+            <div class="iframe-container">
+                <iframe src="3.jpeg" title="Image"></iframe>
+            </div>
+            
+            <h2>Google Map IFrame</h2>
+            <div class="iframe-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31397.948329767587!2d77.96945790000002!3d10.362379200000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00aa57a54881e3%3A0x765a14068982e6e7!2sDindigul%2C%20Tamil%20Nadu%20624001!5e0!3m2!1sen!2sin!4v1736223877400!5m2!1sen!2sin" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-cross-origin"></iframe>
+            </div>
+
+            <h2>YouTube</h2>
+            <div class="iframe-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/gGCwgCe3WtQ?si=p_eTR6e9a48BNCos" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,134 @@
+<html>
+    <head>
+        <title>Responsive Media Page</title>
+        <style>
+            header {
+                text-align: center;
+                padding: 50px 20px;
+                background: linear-gradient(130deg, #4facfe, #00f2fe);
+            }
+            body {
+                font-family: 'Times New Roman', Times, serif;
+                line-height: 1.5;
+                background: linear-gradient(120deg, #e3fdfd, #cbf1f5);
+                color: #333;
+                margin: 0;
+            }
+            header h1 {
+                font-size: 3rem;
+                color: #1a1a40;
+                margin-bottom: 20px;
+            }
+            header p {
+                font-size: 1.8rem;
+                margin-bottom: 20px;
+                color: #0f4c81;
+            }
+            header .mda {
+                background: #ff6f61;
+                color: #fff;
+                padding: 12px 28px;
+                text-decoration: none;
+                font-size: 1.3rem;
+                border-radius: 35px;
+                transition: transform 0.5s, box-shadow 0.5s;
+            }
+            header .mda:hover {
+                transform: translateY(-6px);
+                box-shadow: 0 10px 20px rgba(255, 111, 97, 0.6);
+            }
+            .grid-view {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 25px;
+                justify-content: center;
+                padding: 50px 30px;
+                max-width: 1150px;
+                margin: auto;
+            }
+            .grid {
+                background: #ffffff;
+                border-radius: 10px;
+                padding: 18px;
+                text-align: center;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                transition: transform 0.3s, box-shadow 0.3s;
+            }
+            .grid:hover {
+                transform: translateY(-7px);
+                box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+            }
+            .grid h2 {
+                font-size: 1.7rem;
+                margin-bottom: 15px;
+                color: #3b8beb;
+            }
+            .grid p {
+                font-size: 1rem;
+                color: #555;
+            }
+            footer {
+                text-align: center;
+                padding: 20px;
+                background: #393e46;
+                color: #f0f0f0;
+            }
+            footer a {
+                color: #00adb5;
+                text-decoration: none;
+            }
+            footer a:hover {
+                text-decoration: underline;
+            }
+            @media (max-width: 1150px) {
+                .grid-view {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+                header h1 {
+                    font-size: 2.5rem;
+                }
+                header p {
+                    font-size: 1.5rem;
+                }
+            }
+            @media (max-width: 768px) {
+                .grid-view {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to the Landing Page</h1>
+            <p>Explore a simple and responsive design!</p>
+            <a href="https://www.youtube.com/embed/GAhRMpxbHmY?si=511m1EsFt928j_jk" class="mda">Start Now</a>
+        </header>
+        <section class="grid-view">
+            <div class="grid">
+                <h2>Discover the First Page</h2>
+                <p>Explore engaging content and exciting opportunities to learn and grow.</p>
+            </div>
+            <div class="grid">
+                <h2>Discover the Second Page</h2>
+                <p>Find insights, tools, and resources to enhance your knowledge.</p>
+            </div>
+            <div class="grid">
+                <h2>Discover the Third Page</h2>
+                <p>Immerse yourself in creativity and innovation with our curated content.</p>
+            </div>
+            <div class="grid">
+                <h2>Discover the Fourth Page</h2>
+                <p>Learn from experiences that inspire and motivate for success.</p>
+            </div>
+            <div class="grid">
+                <h2>Discover the Last Page</h2>
+                <p>Connect with a community that supports your personal and professional growth.</p>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2025 Responsive Media Page. All Rights Reserved.</p>
+            <a href="#">Terms and Conditions</a>
+        </footer>
+    </body>
+</html>
