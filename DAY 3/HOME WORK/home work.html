@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Must-Watch Movies</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #2a2a72, #f24c5f); /* Rich purple to red gradient */
+            color: #fff; /* White text to contrast with the rich background */
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7); /* Dark transparent background for contrast */
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #1d1d1d;
+            color: #ffd700; /* Rich gold text color */
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .movie-hero-pair {
+            display: flex;
+            align-items: center;
+            background-color: #333;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .movie, .hero {
+            display: flex;
+            align-items: center;
+            flex: 1;
+        }
+
+        .movie img, .hero img {
+            width: 80px;
+            height: 120px;
+            border-radius: 8px;
+            margin-right: 15px;
+            object-fit: cover;
+            transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+        }
+
+        /* Hover effect for movie and hero images */
+        .movie img:hover, .hero img:hover {
+            transform: scale(1.2); /* Enlarges the image slightly */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adds a floating shadow */
+        }
+
+        .movie div, .hero div {
+            flex-grow: 1;
+        }
+
+        .movie h2, .hero h2 {
+            font-size: 18px;
+            margin: 0;
+            color: #ffd700; /* Rich gold text for movie titles */
+        }
+
+        .movie p, .hero p {
+            font-size: 14px;
+            margin: 5px 0 0;
+            color: #ddd; /* Lighter text color for descriptions */
+        }
+
+        .movie-hero-pair:hover {
+            transform: translateY(-5px); /* Adds a subtle hover effect to each pair */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Adds shadow on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Top 10 Must-Watch Movies and Their Heroes</div>
+
+        <div class="movie-hero-pair">
+            <div class="movie">
+                <img src="1.jpeg" alt="Inception">
+                <div>
+                    <h2>Inception</h2>
+                    <p>A mind-bending thriller.</p>
+                </div>
+            </div>
+            <div class="hero">
+                <img src="OIP.jpeg" alt="Leonardo DiCaprio">
+                <div>
+                    <h2>Leonardo DiCaprio</h2>
+                    <p>Star of Inception.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="movie-hero-pair">
+            <div class="movie">
+                <img src="2.jpeg" alt="Avengers: Endgame">
+                <div>
+                    <h2>Avengers: Endgame</h2>
+                    <p>The ultimate superhero saga.</p>
+                </div>
+            </div>
+            <div class="hero">
+                <img src="3.jpeg" alt="Robert Downey Jr.">
+                <div>
+                    <h2>Robert Downey Jr.</h2>
+                    <p>Iron Man in Endgame.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="movie-hero-pair">
+            <div class="movie">
+                <img src="4.jpeg" alt="The Dark Knight">
+                <div>
+                    <h2>The Dark Knight</h2>
+                    <p>Batman faces the Joker.</p>
+                </div>
+            </div>
+            <div class="hero">
+                <img src="5.jpeg" alt="Christian Bale">
+                <div>
+                    <h2>Christian Bale</h2>
+                    <p>Batman in Dark Knight.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="movie-hero-pair">
+            <div class="movie">
+                <img src="6.jpeg" alt="Interstellar">
+                <div>
+                    <h2>Interstellar</h2>
+                    <p>A journey beyond the stars.</p>
+                </div>
+            </div>
+            <div class="hero">
+                <img src="7.jpeg" alt="Matthew McConaughey">
+                <div>
+                    <h2>Matthew McConaughey</h2>
+                    <p>Star of Interstellar.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="movie-hero-pair">
+            <div class="movie">
+                <img src="8.jpeg" alt="The Matrix">
+                <div>
+                    <h2>The Matrix</h2>
+                    <p>What is reality?</p>
+                </div>
+            </div>
+            <div class="hero">
+                <img src="9.jpeg" alt="Keanu Reeves">
+                <div>
+                    <h2>Keanu Reeves</h2>
+                    <p>Neo in The Matrix.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
