@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>Bird Animation</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                background: linear-gradient(to bottom, #a7d8f0, #6e53e2);
+                overflow: hidden;
+            }
+
+            .bird {
+                position: absolute;
+                width: 100px;
+                height: 90px;
+                animation: fly 6s linear infinite;
+            }
+
+            .bird-body {
+                position: absolute;
+                background-color: #ffb74d;
+                width: 80px;
+                height: 50px;
+                border-radius: 100%;
+                top: 15px;
+                left: 10px;
+            }
+
+            .wing {
+                position: absolute;
+                background-color: #ff9800;
+                width: 50px;
+                height: 20px;
+                border-radius: 25px;
+                transform-origin: bottom center;
+                animation: flap 0.6s ease-in-out infinite;
+            }
+
+            .left-wing {
+                top: 5px;
+                left: 10px;
+                transform: rotate(35deg);
+            }
+
+            .right-wing {
+                top: 5px;
+                right: 10px;
+                transform: rotate(-35deg);
+            }
+
+            .tail {
+                position: absolute;
+                background-color: #f57c00;
+                width: 30px;
+                height: 30px;
+                clip-path: polygon(0% 0%, 100% 60%, 0% 100%);
+                top: 30px;
+                left: -10px;
+            }
+
+            @keyframes fly {
+                0% {
+                    transform: translateX(-100px) translateY(0px);
+                }
+                25% {
+                    transform: translateX(25vw) translateY(-50px);
+                }
+                50% {
+                    transform: translateX(50vw) translateY(50px);
+                }
+                75% {
+                    transform: translateX(75vw) translateY(-50px);
+                }
+                100% {
+                    transform: translateX(100vw) translateY(0px);
+                }
+            }
+
+            @keyframes flap {
+                0%, 100% {
+                    transform: rotate(35deg);
+                }
+                50% {
+                    transform: rotate(-10deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="bird">
+            <div class="bird-body">
+                <div class="wing left-wing"></div>
+                <div class="wing right-wing"></div>
+                <div class="tail"></div>
+            </div>
+        </div>
+    </body>
+</html>

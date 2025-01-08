@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>Listing the data using CSS</title>
+        <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: rgb(84, 176, 238);
+                color: rgb(11, 11, 11);
+                margin: 22px;
+            }
+
+            h1 {
+                text-align: center;
+                color: rgb(4, 4, 4);
+                box-shadow: 0 10px 20px rgba(32, 32, 32, 0.9);
+            }
+
+            .list-item {
+                max-width: 780px;
+                margin: auto;
+                background-color: rgb(255, 237, 174);
+                border-radius: 15px;
+                padding: 18px;
+            }
+
+            ul.dynamicList {
+                list-style-type: disc;
+                padding: 30px;
+            }
+
+            ul.dynamicList li {
+                padding: 11px 10px;
+                margin: 6px 0;
+                background: linear-gradient(135deg, #d9a7c7, #fffcdc);
+                color: rgb(55, 34, 89);
+                border-radius: 10px;
+                position: relative;
+                transition: transform 0.5s, box-shadow 0.4s ease;
+            }
+
+            ul.dynamicList li:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 20px rgba(55, 34, 89, 0.5);
+            }
+
+            ul.dynamicList ul li {
+                background: linear-gradient(135deg, #ffa69e, #faf3dd);
+                color: rgb(43, 54, 44);
+            }
+
+            ol.Ordered {
+                list-style-type: decimal;
+                padding: 30px;
+                background-color: #def3fd;
+                border-radius: 10px;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            }
+
+            ol.Ordered li {
+                padding: 10px;
+                margin: 6px 0;
+                background: linear-gradient(135deg, #f6d365, #fda085);
+                color: rgb(63, 43, 22);
+                border-radius: 10px;
+                transition: transform 0.5s, box-shadow 0.4s ease;
+            }
+
+            ol.Ordered li:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 20px rgba(63, 43, 22, 0.5);
+            }
+
+            ol.Ordered ol li {
+                background: linear-gradient(135deg, #84fab0, #8fd3f4);
+                color: rgb(24, 33, 43);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Lists</h1>
+
+        <div class="list-item">
+            <h2>Provision List</h2>
+            <ul class="dynamicList"> 
+                <li>Stationary Items</li>
+                <li>Candy</li>
+                <li>Spices
+                    <ul>
+                        <li>Veggies</li>
+                        <li>Cardamom</li>
+                    </ul>
+                </li>
+                <li>Juices</li>
+            </ul>
+            <h2>Ordered List</h2>
+            <ol class="Ordered">
+                <li>Paper</li>
+                <li>Wrist-Watch
+                    <ol>
+                        <li>Airpods</li>
+                        <li>Watch</li>
+                    </ol>
+                </li>
+                <li>Scales</li>
+            </ol>
+        </div>    
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Animation</title>
+        <style>
+          body{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin:0%;
+            padding:20px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:100vh;
+            background:linear-gradient(#ffc1e5,#0696d8);
+            color:#ffff
+          }
+          .anime{
+            overflow:hidden;
+            
+            border:2px solid #fff5fb;
+            border-radius: 45px;
+            padding:12px;
+            white-space: nowrap;
+            
+          }
+          .effect{
+            display:inline-block;
+            font-size: 25px;
+            font-weight: bold;
+            animation:scroll-left 5s linear infinite;
+          }
+          @keyframes scroll-left{
+            from{
+                transform:translateX(100%);
+            }
+            to{
+                transform: translateX(-100%);
+            }
+          }
+        </style>
+    </head>
+    <body>
+        <div class="anime">
+            <div class="effect">Here is the scrolling text animation</div>
+        </div>
+    </body>
+</html>
