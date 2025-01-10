@@ -1,0 +1,55 @@
+<html>
+    <style>
+#tag1{
+    color:rgb(255, 255, 0); /* Yellow */
+    font-size: 50px;
+    padding: 10px;
+    border-color: black;
+    background-color: rgb(255, 105, 180); /* Hot pink */
+    border-radius: 100px;
+}
+#tag2{
+    color:rgb(0, 0, 255); /* Blue */
+    font-size: 50px;
+    padding: 10px;
+    border-color: black;
+    background-color: rgb(173, 216, 230); /* Light blue */
+    border-radius: 30px;
+}
+.markque{
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    animation: markque 10s linear infinite;
+}
+@keyframes markque{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+#tag2:hover{
+    color: lime; /* Bright green */
+    font-size: 30px;
+}
+    </style>
+    <body>
+        <div class="markque">
+            <h1>Color</h1>
+        </div>
+        <p id="tag1">Hello</p>
+        <p id="tag2">Text Color Change</p>
+        <button type="button" onclick="trans()">Click Me!</button>
+        <script>
+            function trans(){
+            document.getElementById("tag2").style.color="orange"; /* Orange */
+            document.getElementById("tag2").style.fontFamily="Verdana";
+            document.getElementById("tag2").style.fontSize="55px";
+            document.getElementById("tag1").style.background="lightgreen"; /* Light green */
+            }
+            
+        </script>
+    </body>
+</html>
