@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Register</title>
+    <link rel="stylesheet" href="FORM.CSS">
+</head>
+<body>
+    <button class="btn" onclick="toggleDarkMode()">Dark Mode</button>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="loginForm" onsubmit="return validateLogin()">
+            <div class="form-group">
+                <label for="loginEmail">Email:</label>
+                <input type="email" id="loginEmail" name="loginEmail" required>
+                <span class="error" id="loginEmailError"></span>
+            </div>
+            <div class="form-group">
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" name="loginPassword" required>
+                <span class="error" id="loginPasswordError"></span>
+            </div>
+            <button type="submit" class="button">Login</button>
+        </form>
+
+        <h2>Register</h2>
+        <form id="registerForm" onsubmit="return validateRegister()">
+            <div class="form-group">
+                <label for="registerName">Name:</label>
+                <input type="text" id="registerName" name="registerName" required>
+                <span class="error" id="registerNameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="registerEmail">Email:</label>
+                <input type="email" id="registerEmail" name="registerEmail" required>
+                <span class="error" id="registerEmailError"></span>
+            </div>
+            <div class="form-group">
+                <label for="registerPassword">Password:</label>
+                <input type="password" id="registerPassword" name="registerPassword" required>
+                <span class="error" id="registerPasswordError"></span>
+            </div>
+            <button type="submit" class="button">Register</button>
+        </form>
+    </div>
+
+    <script src="FORM.JS"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    transition: background 0.5s, color 0.5s;
+    background: linear-gradient(to bottom, #6a11cb, #2575fc); /* Light Mode Gradient */
+    color: #222;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #4b0082; /* Dark Indigo */
+}
+
+.form-group {
+    margin: 15px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+.error {
+    color: #e63946; /* Soft Red */
+    font-size: 0.9em;
+}
+
+.button {
+    padding: 10px 20px;
+    background: #6a11cb; /* Vivid Purple */
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: background 0.5s ease;
+    border: none;
+}
+
+.button:hover {
+    background-color: #2575fc; /* Electric Blue */
+}
+
+.dark-mode {
+    background: linear-gradient(to bottom, #1e3c72, #2a5298); /* Dark Mode Gradient */
+    color: #e0e0e0; /* Light Gray */
+}
+
+.dark-mode .button {
+    background-color: #ff4500; /* Orange-Red */
+}
+
+.dark-mode .button:hover {
+    background-color: #ff6347; /* Tomato */
+}
+
+.btn {
+    position: absolute;
+    top: 20px;
+    background-color: #6a11cb; /* Purple */
+    right: 20px;
+    border: none;
+    transition: background 0.3s ease;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #2575fc; /* Bright Blue */
+}
+
+.dark-mode .btn {
+    background: #ff4500; /* Orange-Red */
+}
+
+.dark-mode .btn:hover {
+    background: #ff6347; /* Tomato */
+}
+
+/* Responsive design */
+@media (max-width: 780px) {
+    .container {
+        width: 90%;
+    }
+}
